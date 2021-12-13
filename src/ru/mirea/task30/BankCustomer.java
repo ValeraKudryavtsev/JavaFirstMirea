@@ -49,6 +49,16 @@ public class BankCustomer {
     }
 
     @Override
+    public String toString() {
+        return "BankCustomer{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                ", accountNumber=" + accountNumber +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
